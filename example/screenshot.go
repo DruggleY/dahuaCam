@@ -1,9 +1,9 @@
 package main
 
 import (
-	sdk "dahuaCamSDK"
 	"encoding/json"
 	"fmt"
+	sdk "github.com/DruggleY/dahuaCam"
 	"os"
 )
 
@@ -14,7 +14,7 @@ func main() {
 	}
 
 	// 调用高安全级别登录函数
-	loginId, info, err := sdk.Login("112.240.143.194", 37777, "admin", "admin123")
+	loginId, info, err := sdk.Login("", 37777, "admin", "admin123")
 	if err != nil {
 		fmt.Println("Login failed:", err)
 		return

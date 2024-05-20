@@ -1,4 +1,4 @@
-module dahuaCamSDK
+module github.com/DruggleY/dahuaCam
 
 go 1.21
 
